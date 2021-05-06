@@ -87,17 +87,19 @@ h2{
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.5rem;
+    line-height: 1.5rem;
 }
 p{
     color:rgb(83, 83, 83);
     padding: 2rem;
 }
-#lines{
+.circle-container{
+    position: relative;
     margin: 0 auto;
-    width:50%;
-    border-right:1px solid rgb(160, 137, 207);
+    bottom:-25px;
 }
 .number{
+    background-color: #fff;
     border: 1px solid rgb(187, 181, 181);
     border-radius: 100%;
     width: fit-content; 
@@ -107,7 +109,7 @@ p{
     font-weight: bolder;
 }
 .lines{
-    margin-top:5rem;
+    margin-top:2rem;
     border-left: 1px solid rgb(187, 181, 181);
     height: 5rem;
     position: inherit;
@@ -118,11 +120,24 @@ p{
     .hero{
         flex-wrap:wrap;
     }
+    .box-1{
+        width:50%;
+        order:1;
+        margin-bottom:10%;
+    }
+    .box-2{
+        width:100%;
+        order:3;
+    }
+    .box-3{
+        width:50%;
+        order:2;
+    }
     .footer{
         grid-template-columns: 100%;
         grid-template-rows: 20% 20% 20%;
         text-align: center;
-        padding: 1.4rem 6rem;
+        padding: 2rem 6rem;
     }
     h1{
         font-size: 3rem;
@@ -139,10 +154,12 @@ p{
         padding:5rem 0;
     }
     .footer{
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 20% 5%;
-        text-align: center;
-        padding: 0.5rem;
+        display:flex;
+        flex-direction: column;
+        padding:1rem;
+    }
+    .circle-container{
+        bottom:-20px;
     }
     h1{
         font-size: 2.5rem;
